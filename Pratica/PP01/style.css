@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --cor-padrão: #926239;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--cor-padrão);
+    padding: 0px;
+    margin: 0px;
+}
+
+p { 
+    max-width: 32px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    color: var(--cor-padrão);
+    padding: 0px;
+    margin: 0px;
+}

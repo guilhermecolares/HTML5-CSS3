@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Tente abrir esse site em vários disposistivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Aúdio</h1> <!--.mp3 .ogg .wav-->
+    <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="media/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+        <source src="media/Ice & Fire - King Canyon.ogg" type="audio/ogg">
+        <source src="media/Ice & Fire - King Canyon.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
