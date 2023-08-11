@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        *{
+        * {
             margin: 0px;
         }
 
-        h1{
+        h1 {
             margin-left: 100px;
         }
         table {
@@ -18,31 +18,45 @@
             margin-left: 100px;
         }
 
-        .posição{
-            width: 20px;
+        thead {
+            background-color: rgba(128, 128, 128, 0.295);
+        }
+
+        .posição {
+            width: 10px;
             text-align: center;
         }
 
-        .estado {
-            width: 50px;
+        td.posição {
+            padding: 0px;
         }
 
+        td.estado {
+            width: 10px;
+            text-align: left;
+        }
+
+        td.estado > a {
+            text-decoration: none;
+        }
+        
         th.estado {
             text-align: center;
         }
 
-        td.estado {
-            text-align: left;
+        td.estado a:hover {
+            text-decoration: underline;
         }
 
-        th.população{
-            width: 100px;
+        th.população {
+            width: 10px;
             text-align: center;
         }
 
-        td.população{
-            width: 100px;
+        td.população {
+            width: 10px;
             text-align: right;
+            padding-right: 20px;
         }
 
         th, td {
@@ -62,12 +76,21 @@
         <tbody>
             <tr>
                 <td class="posição">1</td>
-                <td class="estado">São Paulo</td>
+                <td class="estado"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">São Paulo</a></td>
                 <td class="população">44 420 459</td>
+            </tr>
+            <tr>
+                <td class="posição">2</td>
+                <td class="estado"><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                <td class="população">20 538 718</td>
+            </tr>
+            <tr>
+                <td class="posição">3</td>
+                <td class="estado"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                <td class="população">16 054 524</td>
             </tr>
         </tbody>
         <tfoot>
-
         </tfoot>
     </table>
 </body>
