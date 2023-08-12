@@ -31,7 +31,7 @@ header > h1 {
     padding-top: 50px;
     font-family: var(--fonte2);
     font-variant: small-caps;
-    font-size: 6vw;
+    font-size: 10vw;
 }
 
 header > p {
@@ -55,7 +55,7 @@ section {
     line-height: 2em;
     font-family: var(--fonte3);
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 section > p {
