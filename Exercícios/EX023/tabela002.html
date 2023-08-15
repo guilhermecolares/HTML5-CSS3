@@ -18,6 +18,13 @@
             margin-left: 100px;
         }
 
+        caption {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
         thead {
             background-color: rgba(128, 128, 128, 0.295);
         }
@@ -32,7 +39,7 @@
         }
 
         td.estado {
-            width: 10px;
+            width: 50px;
             text-align: left;
         }
 
@@ -49,7 +56,7 @@
         }
 
         th.população {
-            width: 10px;
+            width: 70px;
             text-align: center;
         }
 
@@ -63,15 +70,21 @@
             padding: 3px;
             border: 1px solid black;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 <body>
     <h1>Trabalhando com Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th class="posição">Posição</th>
-            <th class="estado">Estado</th>
-            <th class="população">População</th>
+            <th scope="col" class="posição">Posição</th>
+            <th scope="col" class="estado">Estado</th>
+            <th scope="col" class="população">População</th>
         </thead>
         <tbody>
             <tr>
